@@ -22,8 +22,10 @@
 #
 
 DEVICE_PATH := device/nokia/DRG_sprout
-
+TARGET_OTA_ASSERT_DEVICE := DRG_sprout,DRG,Dragon
 BOARD_VENDOR := nokia
+
+
 
 # Architecture
 TARGET_ARCH := arm64
