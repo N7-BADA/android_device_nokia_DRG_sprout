@@ -140,10 +140,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.drm@1.0-service \
 	android.hardware.drm@1.2-service.clearkey
 
-# Exclude TOF sensor from InputManager
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml
-
 # Fingerprint
 PRODUCT_PACKAGES += \
 	android.hardware.biometrics.fingerprint@2.1
@@ -206,6 +202,10 @@ PRODUCT_PACKAGES += \
 # LiveDisplay
 PRODUCT_PACKAGES += \
 	vendor.lineage.livedisplay@2.0-service-sdm
+
+# Low Power Whitelist
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
 # Media
 PRODUCT_COPY_FILES += \
