@@ -342,7 +342,8 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
 	android.hardware.sensors@1.0-impl \
-	android.hardware.sensors@1.0-service
+	android.hardware.sensors@1.0-service \
+	sensors.sdm660
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/sensors/mh-hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/mh-hals.conf \
