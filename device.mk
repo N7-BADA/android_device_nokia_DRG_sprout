@@ -345,7 +345,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.sensors@1.0-service
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+	$(LOCAL_PATH)/sensors/mh-hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/mh-hals.conf \
 	$(LOCAL_PATH)/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
 # Soong namespaces
